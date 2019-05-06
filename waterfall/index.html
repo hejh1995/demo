@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>瀑布流</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div id="waterfall">
+      <div class='pin'>
+        <img class="img" src="images/4.jpg" alt="图片1">
+        <p class="desciption">图片4哈哈哈哈哈哈哈哈哈哈哈哈</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/2.jpg" alt="图片1">
+        <p class="desciption">图片2</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/3.jpg" alt="图片1">
+        <p class="desciption">图片3</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/4.jpg" alt="图片1">
+        <p class="desciption">图片4</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/5.jpg" alt="图片1">
+        <p class="desciption">图片5</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/6.jpg" alt="图片1">
+        <p class="desciption">图片6</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/6.jpg" alt="图片1">
+        <p class="desciption">图片6</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/5.jpg" alt="图片1">
+        <p class="desciption">图片5</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/4.jpg" alt="图片1">
+        <p class="desciption">图片4</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/3.jpg" alt="图片1">
+        <p class="desciption">图片3</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/2.jpg" alt="图片1">
+        <p class="desciption">图片2</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/1.jpg" alt="图片1">
+        <p class="desciption">图片1</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/4.jpg" alt="图片1">
+        <p class="desciption">图片4</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/3.jpg" alt="图片1">
+        <p class="desciption">图片3</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/4.jpg" alt="图片1">
+        <p class="desciption">图片4</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/5.jpg" alt="图片1">
+        <p class="desciption">图片5</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/6.jpg" alt="图片1">
+        <p class="desciption">图片6</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/4.jpg" alt="图片1">
+        <p class="desciption">图片4</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/3.jpg" alt="图片1">
+        <p class="desciption">图片3</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/2.jpg" alt="图片1">
+        <p class="desciption">图片2</p>
+      </div>
+      <div class='pin'>
+        <img class="img" src="images/1.jpg" alt="图片1">
+        <p class="desciption">图片1</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/util.js"></script>
+    <script type="text/javascript" src="./js/eventEmitter.js"></script>
+    <script type="text/javascript" src="./js/waterFall.js"></script>
+    <script>
+      window.onload = function() {
+        let waterfall = new WaterFall({
+          container: '#waterfall',
+          pins: '.pin',
+          pinWidth: 200,
+          gapWidth: 30
+        });
+      };
+    </script>
+  </body>
+</html>
