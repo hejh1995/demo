@@ -1,6 +1,4 @@
-// WaterFall 是继承自 EventEmitter 的。
 function WaterFall(opts) {
-  EventEmitter.call(this);
   this.opts = extend({}, this.constructor.defaultopts, opts);
   this._container = typeof this.opts.container === 'string' ? document.querySelector(this.opts.container) : this.opts.container;
   this._pins = typeof this.opts.pins === 'string' ? document.querySelectorAll(this.opts.pins) : this.opts.pins;
@@ -13,7 +11,7 @@ WaterFall.defaultopts = {
   gapWidth: 20,
   pinWidth: 216
 }
-var proto = WaterFall.prototype = new EventEmitter();
+var proto = WaterFall.prototype;
 proto.constructor = WaterFall; // proto 的 this 指向
 proto.init = function() {
   this.getColumn(); // 计算列数
