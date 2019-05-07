@@ -1,0 +1,34 @@
+body {
+    background-color: #edece9;
+}
+#waterfall {
+    position: relative;
+    min-height: 500px;
+    margin: 16px auto 0;
+    column-width: 216px;
+    -moz-column-width:216px; /* Firefox */
+    -webkit-column-width:216px; /* Safari 和 Chrome */
+}
+.pin {
+    /* float: left; */
+    width: 216px;
+    margin: 6px 0;
+    padding: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    transition: opacity .4s ease-in-out;
+}
+
+.pin img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.desciption {
+    display: block;
+    padding: 0 16px;
+    overflow: hidden;
+    /* 允许 长单词 换行到下一行 */
+    word-wrap: break-word;
+}
