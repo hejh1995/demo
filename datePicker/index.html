@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>DatePicker</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style>
+			.wrapper {
+				position: relative;
+				top: 60px;
+				left: 40%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h3 class="datePicker-title">选择日期</h3>
+			<input class="datePicker-input" placeholder="可以输入年月再选择，格式为2017-03"></input>
+			<div class="datePicker-wrapper"></div>
+		<div>
+		<script type="text/javascript" src="js/datePicker.js"></script>
+		<script>
+			const input = document.querySelector('.datePicker-input');
+			let year, month;
+			const limitMax = '2019-06-07';
+			const limitMin = '2019-05-08';
+			input.addEventListener('change', function(event) {
+				datePicker.update(this.value);
+			})
+			let datePicker = new DatePicker({
+				wrapper: 'datePicker-wrapper',
+				input: 'datePicker-input',
+				limitMin,
+				limitMax
+			});
+			datePicker.init();
+		</script>
+	</body>
+</html>
